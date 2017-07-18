@@ -27,19 +27,9 @@ namespace Week10
             badMan.AddPower("High Jumps", 25);
             Console.WriteLine(badMan.ToString());
             Console.WriteLine("Malice points: " + badMan.Malice + "\n");
-            //use of the is operator for a class type
-            if(superHero is Human)
-            {
-                Console.WriteLine("Superhero is a human");
-            }
-            if (superHero is SuperHuman)
-            {
-                Console.WriteLine("SuperHero is a SuperHuman");
-            }
-            if(superHero is IHasKarma)
-            {
-                Console.WriteLine("Superhero has karma");
-            }
+
+            Console.WriteLine(badMan._getPowerIndex("Webcasting"));
+            Console.WriteLine(badMan._getPowerIndex("Shadow casting"));
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.7- Added the DisplaySkills stub method to satisfy the Human superclass requirements
+ Version: 0.8- Added private _getPowerIndex method
  */
 namespace Week10
 {
@@ -42,6 +42,28 @@ namespace Week10
         private void _initialize()
         {
             this._powers = new List<Power>();//creates an empty list
+        }
+
+        /// <summary>
+        /// This private method returns the index power of the power name in the power list
+        /// If not found, it returns -1
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>Returns the index of the power in the power list by name</returns>
+        private int _getPowerIndex(string name)
+        {
+            int index = 0;
+            foreach(Power power in this.Powers)
+            {
+                if (name.Equals(power.Name)) 
+                break;
+            }
+            index++;
+            if(this.Powers.Count == index)
+            {
+                index = -1;//this means we did not find the power in the list
+            }
+            return index;
         }
 
         //public methods
