@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 13 2017
  Description: Demo for Lesson 9
- Version: 0.6- Added superVillain and powers
+ Version: 0.7- Implemented superVillain > and < overloaded operator methods
  */
 namespace Week10
 {
@@ -28,8 +28,18 @@ namespace Week10
             Console.WriteLine(badMan.ToString());
             Console.WriteLine("Malice points: " + badMan.Malice + "\n");
 
-            Console.WriteLine(badMan._getPowerIndex("Webcasting"));
-            Console.WriteLine(badMan._getPowerIndex("Shadow casting"));
+           if(badMan.GetPower("High Jumps") > badMan.GetPower("Fire Burst"))
+            {
+                Console.WriteLine("High Jumps is more powerful than Fire Burst");
+            }
+            if (badMan.GetPower("Fire Burst") > badMan.GetPower("High Jumps"))
+            {
+                Console.WriteLine("Fire Burst is more powerful than High Jumps");
+            }
+            else
+            {
+                Console.WriteLine("Fire Burst is weaker than High Jumps");
+            }
         }
     }
 }
