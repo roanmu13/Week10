@@ -5,13 +5,17 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Created power class
- Version: 0.2- Created for power class
+ Version: 0.2- Overloaded the < and > operators for the power class
  */
 namespace Week10
 {/// <summary>
 /// this is the power class which will be used as a data type
 /// </summary>
-    public class Power
+/// 
+   //struct can not be inherited from(only public or private)
+   //struct can not have empty default constructor
+
+     public class Power
     {
 
         //public properties
@@ -28,6 +32,29 @@ namespace Week10
         {
             this.Name = name;
             this.Rank = Rank;
+        }
+
+        //public overloadedoperators
+        //when using operators, always static.need to do both greater than and less than
+        /// <summary>
+        /// This method overloads the > for use with the power class
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>returns true is lhs.rank is > rhs.rank</returns>
+        public static bool operator >(Power lhs, Power rhs)
+        {
+            return (lhs.Rank > rhs.Rank);
+        }
+        /// <summary>
+        /// This method overloads the < for use with the power class
+        /// </summary>
+        /// <param name="lhs"></param>
+        /// <param name="rhs"></param>
+        /// <returns>returns true is lhs.rank is < rhs.rank</returns>
+        public static bool operator <(Power lhs, Power rhs)
+        {
+            return (lhs.Rank < rhs.Rank);
         }
 
     }
