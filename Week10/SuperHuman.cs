@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.8- Added private _getPowerIndex method
+ Version: 0.9- Added GetPower method
  */
 namespace Week10
 {
@@ -53,13 +53,13 @@ namespace Week10
         private int _getPowerIndex(string name)
         {
             int index = 0;
-            foreach(Power power in this.Powers)
+            foreach (Power power in this.Powers)
             {
-                if (name.Equals(power.Name)) 
-                break;
+                if (name.Equals(power.Name))
+                    break;
             }
             index++;
-            if(this.Powers.Count == index)
+            if (this.Powers.Count == index)
             {
                 index = -1;//this means we did not find the power in the list
             }
@@ -113,6 +113,23 @@ namespace Week10
         public override void DisplaySkills()
         {
             Console.WriteLine("Not implemented");
+        }
+
+        /// <summary>
+        /// This method returns a power object that matches the Power name
+        /// Returns anonymous power object with a name of "Power not found" if power not found
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Power GetPower(string name)
+
+        {
+            int index = this._getPowerIndex(name);
+            if (index != -1)
+            {
+                return this.Powers[index];
+            }
+            return new Power("Power not found", 0);//means that the power was not found
         }
     }
 }
