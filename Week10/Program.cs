@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*Rosa Munguia
- Date: July 13 2017
- Description: Demo for Lesson 9
- Version: 0.7- Implemented superVillain > and < overloaded operator methods
+ Date: July 20 2017
+ Description: Driver class for project
+ Version: 0.6- Implemented antiHero class
  */
 namespace Week10
 {
@@ -28,7 +28,14 @@ namespace Week10
             Console.WriteLine(badMan.ToString());
             Console.WriteLine("Malice points: " + badMan.Malice + "\n");
 
-           if(badMan.GetPower("High Jumps") > badMan.GetPower("Fire Burst"))
+            AntiHero batMan = new AntiHero("Batman", 20, 20);
+            batMan.AddPower("Super Intelligence", 50);
+            Console.WriteLine(batMan.ToString());
+            Console.WriteLine("Karma points: " + batMan.Karma + "\n");
+            Console.WriteLine("Malice points: " + batMan.Malice + "\n");
+
+            Console.WriteLine();
+            if (badMan.GetPower("High Jumps") > badMan.GetPower("Fire Burst"))
             {
                 Console.WriteLine("High Jumps is more powerful than Fire Burst");
             }
