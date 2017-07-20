@@ -5,14 +5,14 @@ using System.Text;
 /*Rosa Munguia
  Date: July 18 2017
  Description: Creating superVillain Class
- Version: 0.1- Updated constructor
+ Version: 0.2- Implemented the ITrainable interface
  */
 namespace Week10
 {
     /// <summary>
     /// This is supervillain class
     /// </summary>
-    public class SuperVillain : SuperHuman, IHasMalice
+    public class SuperVillain : SuperHuman, IHasMalice, ITrainable
     {
         //Private instance variables
         private int _malice;
@@ -39,6 +39,10 @@ namespace Week10
             : base(name)
         {
             this.Malice = malice;
+        }
+        public void Trains()
+        {
+            Console.WriteLine("Not Implemented");
         }
     }
 }

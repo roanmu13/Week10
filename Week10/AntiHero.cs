@@ -11,7 +11,7 @@ using System.Text;
  */
 namespace Week10
 {
-    public class AntiHero : SuperHuman, IHasKarma, IHasMalice
+    public class AntiHero : SuperHuman, IHasKarma, IHasMalice, ITrainable
     {
         //PRIVATE INSTANCE VARIABLES
         private int _karma;
@@ -54,9 +54,14 @@ namespace Week10
             this.Karma = karma;
             this.Malice = malice;
         }
-        //PUBLIC METHODS
 
+        
+        //PUBLIC METHODS
+        public void Trains()
+        {
+            Console.WriteLine("Not Implemented");
+        }
         //PRIVATE METHODS
-       
+
     }
 }

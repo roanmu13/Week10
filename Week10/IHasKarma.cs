@@ -12,9 +12,11 @@ namespace Week10
 {
     public interface IHasKarma
     {
-
-
+        
         //PUBLIC PROPERTIES
         int Karma { get; set; }
+
+        //PUBLIC METHODS
+        
     }
 }

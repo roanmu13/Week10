@@ -5,14 +5,14 @@ using System.Text;
 /*Rosa Munguia
  Date: July 13 2017
  Description: SuperHero class that inherits from SuperHuman class
- Version: 0.1- 
+ Version: 0.2- Implemented the ITrainable interface
  */
 namespace Week10
 {
     /// <summary>
     /// This is the superHero class
     /// </summary>
-    public class SuperHero : SuperHuman, IHasKarma
+    public class SuperHero : SuperHuman, IHasKarma, ITrainable
     {
         //Private Instance Variables
         private int _karma;
@@ -42,5 +42,9 @@ namespace Week10
         }
         //Private Methods
         //Public Methods
+        public void Trains()
+        {
+            Console.WriteLine("Not Implemented");
+        }
     }
 }

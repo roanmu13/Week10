@@ -8,55 +8,62 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Week10.SuperHuman">
-    <Position X="2.75" Y="0.5" Width="2.25" />
+    <Position X="3.5" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAEAAAAIAAAAAAACQABQAAIAABAAAA=</HashCode>
       <FileName>SuperHuman.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Week10.Power">
-    <Position X="9.25" Y="2" Width="2.25" />
+    <Position X="6.25" Y="0.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAACAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Power.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Week10.SuperHero">
-    <Position X="5.5" Y="0.5" Width="2.5" />
+    <Position X="7" Y="4.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAgAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SuperHero.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Week10.SuperVillain">
-    <Position X="5.5" Y="3" Width="2.75" />
+    <Position X="0.5" Y="4.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>SuperVillain.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Week10.AntiHero">
-    <Position X="3.25" Y="4.25" Width="1.5" />
+    <Position X="4.25" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAgEAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>AntiHero.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="Week10.IHasKarma">
-    <Position X="9.5" Y="0.5" Width="1.75" />
+    <Position X="8.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IHasKarma.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Week10.IHasMalice" Collapsed="true">
-    <Position X="8.75" Y="4.25" Width="1.75" />
+    <Position X="8.75" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IHasMalice.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Week10.ITrainable">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITrainable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

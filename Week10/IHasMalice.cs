@@ -12,6 +12,9 @@ namespace Week10
     public interface IHasMalice
     {
         //public properties
-        int Malice { get; set; }
+       int Malice { get; set; }
+        //PUBLIC METHODS
+
+  
     }
 }
