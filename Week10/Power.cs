@@ -41,7 +41,7 @@ namespace Week10
         /// </summary>
         /// <param name="lhs"></param>
         /// <param name="rhs"></param>
-        /// <returns>returns true is lhs.rank is > rhs.rank</returns>
+        /// <returns>returns true if lhs.rank is > rhs.rank</returns>
         public static bool operator >(Power lhs, Power rhs)
         {
             return (lhs.Rank > rhs.Rank);
@@ -51,7 +51,7 @@ namespace Week10
         /// </summary>
         /// <param name="lhs"></param>
         /// <param name="rhs"></param>
-        /// <returns>returns true is lhs.rank is < rhs.rank</returns>
+        /// <returns>returns true if lhs.rank is < rhs.rank</returns>
         public static bool operator <(Power lhs, Power rhs)
         {
             return (lhs.Rank < rhs.Rank);
