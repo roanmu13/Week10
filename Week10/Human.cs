@@ -48,5 +48,6 @@ namespace Week10
         //Public Methods
         public abstract void DisplaySkills();
 
+        public abstract void Trains();
     }
 }

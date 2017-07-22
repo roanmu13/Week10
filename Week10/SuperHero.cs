@@ -12,7 +12,7 @@ namespace Week10
     /// <summary>
     /// This is the superHero class
     /// </summary>
-    public class SuperHero : SuperHuman, IHasKarma, ITrainable
+    public class SuperHero : SuperHuman, IHasKarma
     {
         //Private Instance Variables
         private int _karma;
@@ -42,9 +42,9 @@ namespace Week10
         }
         //Private Methods
         //Public Methods
-        public void Trains()
-        {
-            Console.WriteLine("Not Implemented");
+        public override void Trains()
+        { 
+           Console.WriteLine("Not Implemented");
         }
     }
 }

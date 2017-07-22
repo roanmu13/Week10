@@ -40,9 +40,9 @@ namespace Week10
         {
             this.Malice = malice;
         }
-        public void Trains()
-        {
-            Console.WriteLine("Not Implemented");
-        }
+        //public void Trains()
+        //{
+        //    Console.WriteLine("Not Implemented");
+        //}
     }
 }

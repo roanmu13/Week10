@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.9- Added GetPower method
+ Version: 1.0 formatted layout
  */
 namespace Week10
 {
@@ -31,7 +31,8 @@ namespace Week10
         /// main constructor for super human class. It takes one argument: name(string)
         /// </summary>
         /// <param name="name"></param>
-        public SuperHuman(string name) : base(name)
+        public SuperHuman(string name)
+            : base(name)
         {
             this._initialize();
         }
@@ -68,7 +69,7 @@ namespace Week10
 
         //public methods
         /// <summary>
-        /// method ass a power to the powe list
+        /// method adds a power to the power list
         /// It take two parameters: name(string), rank(int)
         /// </summary>
         /// <param name="name"></param>
@@ -87,6 +88,26 @@ namespace Week10
                 Console.WriteLine("Power: " + power.Name + "Rank: " + power.Rank);
             }
         }
+
+        /// <summary>
+        /// This method returns a power object that matches the Power name
+        /// Returns anonymous power object with a name of "Power not found" if power not found
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public Power GetPower(string name)
+
+        {
+            int index = this._getPowerIndex(name);
+            if (index != -1)
+            {
+                return this.Powers[index];
+            }
+            return new Power("Power not found", 0);//means that the power was not found
+        }
+        
+        //PUBLIC OVERRIDDEN METHODS
+
         /// <summary>
         /// The ToString method overrides the built-in object.ToString method. 
         /// It outputs a string that displays the superhuman's name and thier power list
@@ -106,6 +127,11 @@ namespace Week10
             return outputString;
 
         }
+       
+
+        
+
+        
         /// <summary>
         /// This method overrides the human abstract superclass's DisplaySkills method
         /// This method will display a list of skills to the console
@@ -115,21 +141,9 @@ namespace Week10
             Console.WriteLine("Not implemented");
         }
 
-        /// <summary>
-        /// This method returns a power object that matches the Power name
-        /// Returns anonymous power object with a name of "Power not found" if power not found
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public Power GetPower(string name)
-
+        public override void Trains()
         {
-            int index = this._getPowerIndex(name);
-            if (index != -1)
-            {
-                return this.Powers[index];
-            }
-            return new Power("Power not found", 0);//means that the power was not found
+            Console.WriteLine("To be Implemented in subclass");
         }
     }
 }
